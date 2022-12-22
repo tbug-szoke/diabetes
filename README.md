@@ -2,8 +2,8 @@
 
 # Team Members 
 
-Alexa Hoynacke 
-Theresa Szoke
+- Alexa Hoynacke 
+- Theresa Szoke
  
 # Segment 1 
 
