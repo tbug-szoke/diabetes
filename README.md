@@ -34,3 +34,22 @@ This dataset contains 3 files:
 - What risk factors are most predictive of diabetes risk?
 - Can we use a subset of the risk factors to accurately predict whether an individual has diabetes?
 - Can we create a short form of questions using feature selection to accurately predict if someone might have diabetes or is at high risk of diabetes?
+
+## GitHub
+
+### Communication Protocols
+
+- GitHub 
+- Slack
+- email
+- Class sessions 
+
+## Machine Learning Model
+
+### Provisional Machine Learning Model 
+- Takes in data in from the provisional database
+- Outputs label(s) for input data
+
+### Provisional database that 
+- Sample data that mimics the expected final database structure or schema
+- Draft machine learning module is connected to the provisional database
