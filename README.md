@@ -5,7 +5,7 @@
 Alexa Hoynacke 
 Theresa Szoke
  
-# SEGMENT 1 
+# Segment 1 
 
 ## Presentation 
 
