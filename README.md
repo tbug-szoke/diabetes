@@ -28,6 +28,9 @@ This dataset contains 3 files:
 - diabetes _ binary _ health _ indicators _ BRFSS2015.csv is a clean dataset of 253,680 survey responses to the CDC's BRFSS2015. The target variable Diabetes_binary has 2 classes. 0 is for no diabetes, and 1 is for prediabetes or diabetes. This dataset has 21 feature variables and is not balanced.
 
 
-✓ Questions they hope to answer with the data
+### Questions they hope to answer with the data
 
-Note: The content does not yet need to be in the form of a presentation; text in the README.md works as well.
+- Can survey questions from the BRFSS provide accurate predictions of whether an individual has diabetes?
+- What risk factors are most predictive of diabetes risk?
+- Can we use a subset of the risk factors to accurately predict whether an individual has diabetes?
+- Can we create a short form of questions using feature selection to accurately predict if someone might have diabetes or is at high risk of diabetes?
