@@ -50,7 +50,7 @@ This dataset contains 3 files:
 - Takes in data in from the provisional database
 - Outputs label(s) for input data
 
-## Machine Learning Model
+## Database
 
 ### Provisional database  
 - Sample data that mimics the expected final database structure or schema
