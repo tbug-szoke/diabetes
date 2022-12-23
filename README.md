@@ -22,7 +22,6 @@ We choose this topic because it is interesting and relevant. Diabetes is among t
 We will be using a few different data sets to build our database. 
 
 The first group of datasets comes from Diabetes Health Indicators Dataset (Kaggle)
-
 https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system?select=2011.csv
 
 This original dataset contains responses from 441,455 individuals and has 330 features. These features are either questions directly asked of participants, or calculated variables based on individual participant responses.
