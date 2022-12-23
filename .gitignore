@@ -1,5 +1,7 @@
 # data files to ignore
 *.csv
+# Other files to ignore
+.RHistory
 .DS_Store
 .ipynb_checkpoints/*
 */.ipynb_checkpoints/*
