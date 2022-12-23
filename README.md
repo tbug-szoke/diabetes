@@ -17,7 +17,7 @@ For our CWRU Data Analytics Bootcamp Project our group has chosen to analyze dia
 
 We choose this topic because it is interesting and relevant. Diabetes is among the most prevalent chronic diseases in the United States, impacting millions of Americans each year and exerting a significant financial burden on the economy. Most people today, either personally struggle with Diabetes or know someone who does. Diabetes is a serious chronic disease in which individuals lose the ability to effectively regulate levels of glucose in the blood, and can lead to reduced quality of life and life expectancy. Early diagnosis can lead to lifestyle changes and more effective treatment, making predictive models for diabetes risk important tools for public and public health officials.
 
-### Description data source:
+### Description of data source:
 
 We will be using a few different data sets to build our database. 
 
