@@ -22,6 +22,7 @@ We choose this topic because it is interesting and relevant. Diabetes is among t
 We will be using a few different data sets to build our database. 
 
 The first group of datasets comes from Diabetes Health Indicators Dataset (Kaggle)
+https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system?select=2011.csv
 
 This original dataset contains responses from 441,455 individuals and has 330 features. These features are either questions directly asked of participants, or calculated variables based on individual participant responses.
 
@@ -32,10 +33,11 @@ This dataset contains 3 files:
 - diabetes _ binary _ health _ indicators _ BRFSS2015.csv is a clean dataset of 253,680 survey responses to the CDC's BRFSS2015. The target variable Diabetes_binary has 2 classes. 0 is for no diabetes, and 1 is for prediabetes or diabetes. This dataset has 21 feature variables and is not balanced.
 
 We will also be utilizing datasets from Behavioral Risk Factor Surveillance System (Kaggle)
+https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
 
 The Behavioral Risk Factor Surveillance System (BRFSS) is the nation's premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services. 
 
-This dataset is broken into 5 files of public health surveys of 400k people from 2011-2015.
+This dataset is broken into 5 files of public health surveys of 400k people from 2011-2015. We will be utilizing 2011 and 2015 data 
 
 ### Questions they hope to answer with the data
 
