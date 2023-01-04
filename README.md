@@ -32,7 +32,7 @@ This dataset is broken into 5 files of public health surveys of 400k people from
 - What risk factors are most predictive of diabetes risk?
 - Can we use a subset of the risk factors to accurately predict whether an individual has diabetes?
 - Can we create a short form of questions using feature selection to accurately predict if someone might have diabetes or is at high risk of diabetes?
-- Is there a correlation between State weather and diabetes risk level?
+- Are there other correlations between state level factors and diabetes risk indicators? 
 
 ## GitHub
 
