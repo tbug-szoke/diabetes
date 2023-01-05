@@ -66,5 +66,10 @@ This dataset is broken into 5 files of public health surveys of 400k people from
 - Sample data that mimics the expected final database structure or schema
 - Draft machine learning module is connected to the provisional database
 
+#### 2011 Schema 
+Below is a screenshot of the 2011 schema. 2011 BRFSS Database was created in PG admin and the following tables were created: BRFSS_2011 and State.
+
+<img width="278" alt="Screenshot 2023-01-05 at 5 24 27 PM" src="https://user-images.githubusercontent.com/111096384/210891819-771e4569-f7bf-4e45-82eb-adfe38bed754.png">
+
 
 
