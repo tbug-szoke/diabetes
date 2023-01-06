@@ -49,7 +49,21 @@ This dataset is broken into 5 files of public health surveys of 400k people from
 - Takes in data in from the provisional database
 - Outputs label(s) for input data
 
-#### 2011 EDA and Machine Learning Models 
+####EDA and Machine Learning Models 
+
+For our final project we are looking at 57 different factors that could potenitally help predict if a person has diabetes. We completed exploratory data anlysis, feature importance analysis, and assessed 3 different Machine Learning Models (Random Forest Classifier, Decision Tree, and Support Vector Machine)
+
+Below is a screenshot outlining our feature importance analysis. Through this test we were able to identify which features have the largest impact on predicting if a person has diabetes. Following this analysis we are now focsing on 20 features versus the intial 57. 
+
+<img width="544" alt="Screenshot 2023-01-05 at 8 26 30 PM" src="https://user-images.githubusercontent.com/111096384/210910985-5d0fff75-c9e9-470c-8d35-3475bd5a9506.png">
+
+We also found that the Random Forest Classifier Machine Learning Model is the best model to accurately predict if a person has diabetes based off the BRFSS dataset features 
+
+See the below screenshots:
+
+<img width="538" alt="Screenshot 2023-01-05 at 8 34 54 PM" src="https://user-images.githubusercontent.com/111096384/210911902-c5c9d93e-3037-4ab6-9fa4-c27e4bc0372d.png">
+
+<img width="539" alt="Screenshot 2023-01-05 at 8 34 58 PM" src="https://user-images.githubusercontent.com/111096384/210911938-050050e5-842e-4a44-b392-099bb3d7919b.png">
 
 ## Database
 
