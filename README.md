@@ -75,8 +75,9 @@ See the below screenshots:
 Below is a screenshot of the schema. 2011 and 2015 Diabetes Database was created in PG admin and the following tables were created: Diabetes (2015 & 2011) and State.
 
 <img width="316" alt="Screenshot 2023-01-05 at 8 37 48 PM" src="https://user-images.githubusercontent.com/111096384/210912191-deca71a1-3162-421c-ae94-3e5d3d8480a5.png">
+<img width="318" alt="Screenshot 2023-01-05 at 8 37 53 PM" src="https://user-images.githubusercontent.com/111096384/210912356-58439cd1-5b45-4108-8157-2a89adc6415d.png">
 
-<img width="319" alt="Screenshot 2023-01-05 at 8 37 53 PM" src="https://user-images.githubusercontent.com/111096384/210912199-948db5c9-a37f-446d-afde-414e68b49e48.png">
+
 
 
 
