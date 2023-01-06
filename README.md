@@ -49,7 +49,7 @@ This dataset is broken into 5 files of public health surveys of 400k people from
 - Takes in data in from the provisional database
 - Outputs label(s) for input data
 
-####EDA and Machine Learning Models 
+#### EDA and Machine Learning Models 
 
 For our final project we are looking at 57 different factors that could potenitally help predict if a person has diabetes. We completed exploratory data anlysis, feature importance analysis, and assessed 3 different Machine Learning Models (Random Forest Classifier, Decision Tree, and Support Vector Machine)
 
@@ -73,6 +73,12 @@ See the below screenshots:
 
 #### Schema 
 Below is a screenshot of the schema. 2011 and 2015 Diabetes Database was created in PG admin and the following tables were created: Diabetes (2015 & 2011) and State.
+
+<img width="316" alt="Screenshot 2023-01-05 at 8 37 48 PM" src="https://user-images.githubusercontent.com/111096384/210912191-deca71a1-3162-421c-ae94-3e5d3d8480a5.png">
+
+<img width="319" alt="Screenshot 2023-01-05 at 8 37 53 PM" src="https://user-images.githubusercontent.com/111096384/210912199-948db5c9-a37f-446d-afde-414e68b49e48.png">
+
+
 
 
 
