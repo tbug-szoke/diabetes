@@ -19,23 +19,12 @@ We choose this topic because it is interesting and relevant. Diabetes is among t
 
 ### Description of data source:
 
-We will be using a few different data sets to build our database. 
-
-The first group of datasets comes from Diabetes Health Indicators Dataset (Kaggle)
-
-This original dataset contains responses from 441,455 individuals and has 330 features. These features are either questions directly asked of participants, or calculated variables based on individual participant responses.
-
-This dataset contains 3 files:
-
-- diabetes _ 012 _ health _ indicators _ BRFSS2015.csv is a clean dataset of 253,680 survey responses to the CDC's BRFSS2015. The target variable Diabetes_012 has 3 classes. 0 is for no diabetes or only during pregnancy, 1 is for prediabetes, and 2 is for diabetes. There is class imbalance in this dataset. This dataset has 21 feature variables
-- diabetes _ binary _ 5050split _ health _ indicators _ BRFSS2015.csv is a clean dataset of 70,692 survey responses to the CDC's BRFSS2015. It has an equal 50-50 split of respondents with no diabetes and with either prediabetes or diabetes. The target variable Diabetes_binary has 2 classes. 0 is for no diabetes, and 1 is for prediabetes or diabetes. This dataset has 21 feature variables and is balanced.
-- diabetes _ binary _ health _ indicators _ BRFSS2015.csv is a clean dataset of 253,680 survey responses to the CDC's BRFSS2015. The target variable Diabetes_binary has 2 classes. 0 is for no diabetes, and 1 is for prediabetes or diabetes. This dataset has 21 feature variables and is not balanced.
-
 We will also be utilizing datasets from Behavioral Risk Factor Surveillance System (Kaggle)
+https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
 
 The Behavioral Risk Factor Surveillance System (BRFSS) is the nation's premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services. 
 
-This dataset is broken into 5 files of public health surveys of 400k people from 2011-2015.
+This dataset is broken into 5 files of public health surveys of 400k people from 2011-2015. We will be utilizing 2011 and 2015 data 
 
 ### Questions they hope to answer with the data
 
@@ -43,7 +32,7 @@ This dataset is broken into 5 files of public health surveys of 400k people from
 - What risk factors are most predictive of diabetes risk?
 - Can we use a subset of the risk factors to accurately predict whether an individual has diabetes?
 - Can we create a short form of questions using feature selection to accurately predict if someone might have diabetes or is at high risk of diabetes?
-- Is there a correlation between State weather and diabetes risk level?
+- Are there other correlations between state level factors and diabetes risk indicators? 
 
 ## GitHub
 
@@ -60,16 +49,30 @@ This dataset is broken into 5 files of public health surveys of 400k people from
 - Takes in data in from the provisional database
 - Outputs label(s) for input data
 
+#### EDA and Machine Learning Models 
+
+For our final project we are looking at 57 different factors that could potenitally help predict if a person has diabetes. We completed exploratory data anlysis, feature importance analysis, and assessed 3 different Machine Learning Models (Random Forest Classifier, Decision Tree, and Support Vector Machine)
+
+Below is a screenshot outlining our feature importance analysis. Through this test we were able to identify which features have the largest impact on predicting if a person has diabetes. Following this analysis we are now focsing on 20 features versus the intial 57. 
+
+<img width="544" alt="Screenshot 2023-01-05 at 8 26 30 PM" src="https://user-images.githubusercontent.com/111096384/210910985-5d0fff75-c9e9-470c-8d35-3475bd5a9506.png">
+
+We also found that the Random Forest Classifier Machine Learning Model is the best model to accurately predict if a person has diabetes based off the BRFSS dataset features 
+
+See the below screenshots:
+
+<img width="538" alt="Screenshot 2023-01-05 at 8 34 54 PM" src="https://user-images.githubusercontent.com/111096384/210911902-c5c9d93e-3037-4ab6-9fa4-c27e4bc0372d.png">
+
+<img width="539" alt="Screenshot 2023-01-05 at 8 34 58 PM" src="https://user-images.githubusercontent.com/111096384/210911938-050050e5-842e-4a44-b392-099bb3d7919b.png">
+
 ## Database
 
 ### Provisional database  
 - Sample data that mimics the expected final database structure or schema
 - Draft machine learning module is connected to the provisional database
 
-#### 2011 Schema 
-Below is a screenshot of the 2011 schema. 2011 BRFSS Database was created in PG admin and the following tables were created: BRFSS_2011 and State.
+#### Schema 
+Below is a screenshot of the schema. 2011 and 2015 Diabetes Database was created in PG admin and the following tables were created: Diabetes (2015 & 2011) and State.
 
-<img width="278" alt="Screenshot 2023-01-05 at 5 24 27 PM" src="https://user-images.githubusercontent.com/111096384/210891819-771e4569-f7bf-4e45-82eb-adfe38bed754.png">
-
-
-
+<img width="316" alt="Screenshot 2023-01-05 at 8 37 48 PM" src="https://user-images.githubusercontent.com/111096384/210912191-deca71a1-3162-421c-ae94-3e5d3d8480a5.png">
+<img width="318" alt="Screenshot 2023-01-05 at 8 37 53 PM" src="https://user-images.githubusercontent.com/111096384/210912356-58439cd1-5b45-4108-8157-2a89adc6415d.png">
