@@ -57,6 +57,8 @@ See the below screenshots:
 
 <img width="539" alt="Screenshot 2023-01-05 at 8 34 58 PM" src="https://user-images.githubusercontent.com/111096384/210911938-050050e5-842e-4a44-b392-099bb3d7919b.png">
 
+We are leveraging the feature importances to reduce the number of columns in our machine learning models to see how we can come to an optimum set of features.  We also intend to run some variations to see if the model is different for men and women, for year (2011 v 2015) or by the race of the respondent.
+
 ## Database
 
 ### Provisional database  
