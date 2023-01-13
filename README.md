@@ -1,47 +1,39 @@
-# CWRU Final Project - Diabetes Health Indicator
+# CWRU Final Project - Diabetes Trends, Predictions and Proposals
 
-# Team Members 
+### Team Members 
 
 - Alexa Hoynacke 
 - Theresa Szoke
  
-# Segment 1 
-
-## Presentation 
-
-### Selected topic:
-
-For our CWRU Data Analytics Bootcamp Project our group has chosen to analyze diabetes health indicators to help predict a patient’s risk level for diabetes. We will also be further analyzing if there is a correlation between state weather and diabetes risk level. 
-
-### Reason for the selected topic:
-
-We choose this topic because it is interesting and relevant. Diabetes is among the most prevalent chronic diseases in the United States, impacting millions of Americans each year and exerting a significant financial burden on the economy. Most people today, either personally struggle with Diabetes or know someone who does. Diabetes is a serious chronic disease in which individuals lose the ability to effectively regulate levels of glucose in the blood, and can lead to reduced quality of life and life expectancy. Early diagnosis can lead to lifestyle changes and more effective treatment, making predictive models for diabetes risk important tools for public and public health officials.
-
-### Description of data source:
-
-We will also be utilizing datasets from Behavioral Risk Factor Surveillance System (Kaggle)
-https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset
-
-The Behavioral Risk Factor Surveillance System (BRFSS) is the nation's premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services. 
-
-This dataset is broken into 5 files of public health surveys of 400k people from 2011-2015. We will be utilizing 2011 and 2015 data 
-
-### Questions they hope to answer with the data
-
-- Can survey questions from the BRFSS provide accurate predictions of whether an individual has diabetes?
-- What risk factors are most predictive of diabetes risk?
-- Can we use a subset of the risk factors to accurately predict whether an individual has diabetes?
-- Can we create a short form of questions using feature selection to accurately predict if someone might have diabetes or is at high risk of diabetes?
-- Are there other correlations between state level factors and diabetes risk indicators? 
-
-## GitHub
-
 ### Communication Protocols
 
 - GitHub 
 - Slack
 - email
 - Class sessions 
+
+# Overview 
+
+For our capstone project, we will be analyzing data from the CDC's annual behavioral health risk surveillance survey (BRFSS) to gain a deeper understanding of the prevalence of diabetes and to determine if other health risk factors can be reliably and accurately utilized to predict diabetes risk.
+
+In 2019, diabetes was the 7th leading cause of death in the United States.  37.3 million people in the United States are afflicted with diabetes, including 8.5 million who are undiagnosed.  These statistics alone make this a worthy topic of study.  In addition, the availability of rich data sets from the CDC's survey made this a compelling project topic.
+
+## Questions we hope to answer:
+1. Can we create a machine learning model capable of predicting a person’s likelihood of having diabetes on the basis of answers to health risk questions?  
+    - Is that model consistent with the risk factors that the CDC and others use to assess risk?
+2. Will that model perform equally well on data from 2011 as 2015?  Does it perform equally well for men or women?  Any difference by race?
+3. What are the top 10-20 factors, available in the survey, which correlate to diabetes risk?
+    - How simple can we make the inputs to achieve an accuracy score over 80%?
+4. Do different states have different levels of diabetes prevalence?  If so, does that correlate to any other state specific factors? (weather, socio economic levels, public infrastructure or attitudes) (NOTE that we do not have data set for these questions yet)
+
+## Data sources:
+
+We are utilizing data from the 2011 and 2015 BRFSS surveys from a [Kaggle](https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system) source.  This data was converted from SAS format to CSV, which was easy for us to utilize in our project.
+
+
+The Behavioral Risk Factor Surveillance System (BRFSS) is the nation's premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services. 
+
+# Analysis
 
 ## Machine Learning Model
 
@@ -76,6 +68,12 @@ Below is a screenshot of the schema. 2011 and 2015 Diabetes Database was created
 
 <img width="316" alt="Screenshot 2023-01-05 at 8 37 48 PM" src="https://user-images.githubusercontent.com/111096384/210912191-deca71a1-3162-421c-ae94-3e5d3d8480a5.png">
 <img width="318" alt="Screenshot 2023-01-05 at 8 37 53 PM" src="https://user-images.githubusercontent.com/111096384/210912356-58439cd1-5b45-4108-8157-2a89adc6415d.png">
+
+# Results
+
+Our draft presentation is availabe on [google documents](https://docs.google.com/presentation/d/1dauYWDsVA_TuFciaeeTqlzg6qKlfKbXqYvTsndvt5L0/edit?usp=sharing).
+
+We will be developing our Tableau dashboard (referenced in the draft presentation) in the coming weeks.
 
 
 
