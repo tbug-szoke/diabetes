@@ -28,18 +28,19 @@ In 2019, diabetes was the 7th leading cause of death in the United States.  37.3
 
 ## Data sources:
 
-We are utilizing data from the 2011 and 2015 BRFSS surveys from a [Kaggle](https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system) source.  This data was converted from SAS format to CSV, which was easy for us to utilize in our project.
+#### EDA and Machine Learning Models 
 
+Below is a screenshot outlining our feature importance analysis. Through this test we were able to identify which features have the largest impact on predicting if a person has diabetes. Following this analysis we are now focsing on 20 features versus the intial 57. 
 
-The Behavioral Risk Factor Surveillance System (BRFSS) is the nation's premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services. 
+We also found that the Random Forest Classifier Machine Learning Model is the best model to accurately predict if a person has diabetes based off the BRFSS dataset features 
 
-# Analysis
+See the below screenshots:
 
-## Machine Learning Model
+<img width="538" alt="Screenshot 2023-01-05 at 8 34 54 PM" src="https://user-images.githubusercontent.com/111096384/210911902-c5c9d93e-3037-4ab6-9fa4-c27e4bc0372d.png">
 
-### Provisional Machine Learning Model 
-- Takes in data in from the provisional database
-- Outputs label(s) for input data
+<img width="539" alt="Screenshot 2023-01-05 at 8 34 58 PM" src="https://user-images.githubusercontent.com/111096384/210911938-050050e5-842e-4a44-b392-099bb3d7919b.png">
+
+We are leveraging the feature importances to reduce the number of columns in our machine learning models to see how we can come to an optimum set of features.  We also intend to run some variations to see if the model is different for men and women, for year (2011 v 2015) or by the race of the respondent.
 
 #### EDA and Machine Learning Models 
 
@@ -57,8 +58,6 @@ See the below screenshots:
 
 <img width="539" alt="Screenshot 2023-01-05 at 8 34 58 PM" src="https://user-images.githubusercontent.com/111096384/210911938-050050e5-842e-4a44-b392-099bb3d7919b.png">
 
-We are leveraging the feature importances to reduce the number of columns in our machine learning models to see how we can come to an optimum set of features.  We also intend to run some variations to see if the model is different for men and women, for year (2011 v 2015) or by the race of the respondent.
-
 ## Database
 
 ### Provisional database  
@@ -70,16 +69,3 @@ Below is a screenshot of the schema. 2011 and 2015 Diabetes Database was created
 
 <img width="316" alt="Screenshot 2023-01-05 at 8 37 48 PM" src="https://user-images.githubusercontent.com/111096384/210912191-deca71a1-3162-421c-ae94-3e5d3d8480a5.png">
 <img width="318" alt="Screenshot 2023-01-05 at 8 37 53 PM" src="https://user-images.githubusercontent.com/111096384/210912356-58439cd1-5b45-4108-8157-2a89adc6415d.png">
-
-# Results
-
-Our draft presentation is availabe on [google documents](https://docs.google.com/presentation/d/1dauYWDsVA_TuFciaeeTqlzg6qKlfKbXqYvTsndvt5L0/edit?usp=sharing).
-
-We will be developing our Tableau dashboard (referenced in the draft presentation) in the coming weeks.
-
-
-
-
-
-
-
