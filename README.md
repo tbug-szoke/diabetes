@@ -26,6 +26,15 @@ In 2019, diabetes was the 7th leading cause of death in the United States.  37.3
     - How simple can we make the inputs to achieve an accuracy score over 80%?
 4. Do different states have different levels of diabetes prevalence?  If so, does that correlate to any other state specific factors? (weather, socio economic levels, public infrastructure or attitudes) (NOTE that we do not have data set for these questions yet)
 
+## Final presentation:
+
+Our final presentation is available [here.](https://docs.google.com/presentation/d/1dauYWDsVA_TuFciaeeTqlzg6qKlfKbXqYvTsndvt5L0/edit?usp=sharing)
+
+## Dashboard
+
+A dashboard accompanying our analysis is available [here.](https://public.tableau.com/app/profile/alexa.hoynacke/viz/DiabetesDashboard_16740856831520/GeneralHealth)
+
+
 ## Data sources:
 
 #### EDA and Machine Learning Models 
