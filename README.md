@@ -1,7 +1,7 @@
 # CWRU Data Analytics Bootcamp Capstone Project - Diabetes Trends, Predictions and Proposals
 
 ## Overview 
-In this project, we will be analyzing data from the CDC's annual behavioral health risk surveillance survey (BRFSS) to gain a deeper understanding of the prevalence of diabetes and to determine if a machine learning model can be created to predict the risk of having diabetes or prediabetes based on general health risk factors.
+In this project, we analyzed data from the CDC's annual behavioral health risk surveillance survey (BRFSS) to gain a deeper understanding of the prevalence of diabetes and to determine if a machine learning model can be created to predict the risk of having diabetes or prediabetes based on general health risk factors.
 
 In 2019, diabetes was the 7th leading cause of death in the United States.  37.3 million people in the United States are afflicted with diabetes, including 8.5 million who are undiagnosed.  These statistics alone make this a worthy topic of study.  In addition, the availability of rich data sets from the CDC's survey made this a compelling project topic.
 
@@ -35,13 +35,7 @@ We loaded the files into pandas and did some cursory reviews:
 - Running dataframe.describe() told us that column names were mostly unintelligible and that many of the columns had many null records.
 - Running value_counts() on selected individual columns was not any more insightful … we needed Subject Matter Expertise!
 
-Fortunately, the CDC publishes codebooks which described the BRFSS survey data in detail.  We leveraged the books for our data sets:
-
-[2011 Codebook](https://www.cdc.gov/brfss/annual_data/2011/pdf/CODEBOOK11_LLCP.pdf)
-
-[2015 Codebook](https://www.cdc.gov/brfss/annual_data/2015/pdf/codebook15_llcp.pdf)
-
-We utilized pandas to extract the BRFSS columns to a list, which we imported to Excel.  Leveraging the code books, we documented our understanding of the survey questions and identified questions of interest that may have a bearing on diabetes risk.  Ideally, if we were data scientists working on this project, we would have access to medical experts who would have advised on our strategy.  Following this detailed review of the raw data, we narrowed down the original data sets to 51 columns of interest, which were available in both the 2011 and 2015 surveys.
+Fortunately, the CDC publishes codebooks which described the BRFSS survey data in detail. We utilized pandas to extract the BRFSS columns to a list, which we imported to Excel.  Leveraging the code books for the [2011](https://www.cdc.gov/brfss/annual_data/2011/pdf/CODEBOOK11_LLCP.pdf) and [2015](https://www.cdc.gov/brfss/annual_data/2015/pdf/codebook15_llcp.pdf) data sets, we documented our understanding of the survey questions and identified questions of interest that may have a bearing on diabetes risk.  Ideally, if we were data scientists working on this project, we would have access to medical experts who would have advised on our strategy.  Following this detailed review of the raw data, we narrowed down the original data sets to 51 columns of interest, which were available in both the 2011 and 2015 surveys.
 
 As we were only interested in understanding that set of data where the survey respondent clearly answered the question about their history of diabetes, we additionally dropped any rows from the data where the diabetes question was not asked or was not answered definitively.
 
@@ -62,17 +56,34 @@ Our diabetes database contained 50 potential features and the 1 diabetes target 
 
 #### Feature Selection and Engineering
 
-We leveraged feature importance analysis to help identify features to remove from our initial feature set.  Below is a screenshot outlining our feature importance analysis. Through this test we were able to identify which features have the largest impact on predicting if a person has diabetes. Through this analysis we reduced from 51 to 20 to finally 10 key features. 
+The first Random Forest Classifier we ran with all 50 potential features performed well with accuracy over 86%.  However, we were interested in identifying a much smaller number of features - we were thinking to future solution where a very short survey could be completed in a app and provide the user with feedback as to their risk of having diabetes.  We wanted to reduce the number of features while still having high accuracy.  We leveraged feature importance analysis to help identify features to remove from our initial feature set.  The code snippet below from our final machine learning model shows how we used the feature importance to remove columns from our X data:
 
-See the below screenshots:
+```
+# Based on above importances, reduce the Features to the top 10 most imporantant
 
-<img width="538" alt="Screenshot 2023-01-05 at 8 34 54 PM" src="https://user-images.githubusercontent.com/111096384/210911902-c5c9d93e-3037-4ab6-9fa4-c27e4bc0372d.png">
+index_values = X.columns.to_list()
+column_values = ["importance"]
+importances = pd.DataFrame(data = rfc.feature_importances_, 
+                  index = index_values, 
+                  columns = column_values)
 
-<img width="539" alt="Screenshot 2023-01-05 at 8 34 58 PM" src="https://user-images.githubusercontent.com/111096384/210911938-050050e5-842e-4a44-b392-099bb3d7919b.png">
+importances.sort_values('importance', ascending = False, inplace= True)
+
+# Create a list of the importances after the top 10, which will be dropped from our X data:
+cut = importances[10:]
+to_cut = cut.index.to_list()
+
+# Create new X data with only important columns
+
+X = X.drop(columns=to_cut)
+```
+In our initial models we slowly reduced the number of features, from 50 to 20 to 15 to 10, running the models multiple times to ensure the performance was consistent.  We stopped at the below 10 features:
+
+![Final 10 Features](/Images/Final10Features.png)
 
 #### How Model was Trained
 
-After creating the training and testing data sets utilizing `StandardScaler()`, we created a simple Random Forest Classifier and ran predictions:
+After creating the training and testing data sets, we utilized `StandardScaler()` to scale the feature data then we created a simple Random Forest Classifier and ran predictions:
 ```
 scaler = StandardScaler()
 # Fitting the Standard Scaler with the training data.
@@ -92,7 +103,13 @@ predictions = rfc.predict(X_test_scaled)
 Our models consistently performed with accuracy above 85%.  We focused on reducing features based on feature importances and re-running the model until we were down to 10 key features.
 
 #### Confusion Matrix and Accuracy
+Our final results are shown below. Accuracy was still above 85% on the final model:
 
+![Accuracy](/Images/FinalAccuracy.png)
+
+The confusion matrix showed that precision and recall were high:
+
+![Confusion Matrix](/Images/FinalConfusionMatrix.png)
 
 ### Dashboard
 Need to update this section
