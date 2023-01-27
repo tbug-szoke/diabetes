@@ -112,7 +112,7 @@ The confusion matrix showed that precision and recall were high:
 ![Confusion Matrix](/Images/FinalConfusionMatrix.png)
 
 ### Dashboard
-Need to update this section
+Our dashboard was created in Tableau and provides an overview of the project, key results from our machine learning model, and an interactive element to look at diabetes prevalence by state and by the top 5 factors associated with diabetes risk.
 
 ## Results
 ### Conclusions
